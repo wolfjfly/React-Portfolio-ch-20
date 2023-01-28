@@ -1,54 +1,70 @@
-# React Portfolio Description
-Module 20 challenge - An updated portfolio showcasing my full stack dev projects. Contains 6 projects, an about me, and the ability to download my resume.
+# Getting Started with Create React App
 
-## Table of Contents
-- [Live Site](#live-site)
-- [Preview](#preview)
-- [Tech Used](#tech-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
-- [Questions](#questions)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Live Site
-https://react-portfolio-nu-eight.vercel.app/
-https://emilynecciai.github.io/react-portfolio/#about
+## Available Scripts
 
+In the project directory, you can run:
 
-### Preview 
+### `npm start`
 
-![Preview](https://github.com/EmilyNecciai/react-portfolio/blob/ffa8eaa153eb51f5eeebaf3b3742d24f228c2684/public/img/reactportfolioscreenshot.png)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Tech Used
+### `npm test`
 
-Dependencies: 
-- "react": "^17.0.2",
-- "react-dom": "^17.0.2",
-- "react-scripts": "4.0.3",
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Installation 
+### `npm run build`
 
-> If you are a Coding Bootcamp student and plan to use this repo to build your own react portfolio, please give credit. They will find out that you used someone else's repo instead of building it yourself. Then, they'll fail you or kick you out of the program. I'm happy that you want to use my repo and I love all things open source, but I don't want people to fail a course because they chose to copy what is actually a pretty easy project compared to the rest of what you typically do in a full stack bootcamp. Submit an [issue](https://github.com/EmilyNecciai/react-portfolio/issues) if you have any questions. 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-To install this project into your own, use `git clone <REPONAME>` in your command-line, then `npm init` to install the listed dependencies.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Set Up Form / Contact Submission
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Then, create a (free) [Formspree Account](https://formspree.io) to collect and manage your contact submissions. Create a `.env` file and paste in `REACT_APP_FORM_ID="not-a-real-form-id"`. Then, replace `not-a-real-form-id` with the form id listed in your Formspree account (the last part of your form's endpoint: `https://formspree.io/f/not-a-real-form-id`). If you're using something other than Github Pages, such as Vercel, Heroku, or Netlify, set up these variables in that provider's UI/dashboard. 
+### `npm run eject`
 
-## Usage 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-To use this repo, go to the cloned files, then type `npm start` in your command-line. Be sure you’re in the correct location in your command-line/terminal first! Be sure you're also set up to run a react app!
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-> Remember to [set up your Formspree Account to collect contact information](#set-up-form--contact-submission)!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Contribution
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-To contribute to this project, fork the repo, make some edits in a new branch, then submit a PR. It’ll be merged to the main branch upon testing and approval.
+## Learn More
 
-[List of Open Bugs](https://github.com/EmilyNecciai/react-portfolio/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Questions
-Reach out to the repo owner, [EmilyNecciai](https://github.com/EmilyNecciai) by [creating a new issue](https://github.com/EmilyNecciai/react-portfolio/issues) in this repo.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
