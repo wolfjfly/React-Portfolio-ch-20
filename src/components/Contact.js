@@ -4,7 +4,7 @@ import { validateEmail } from '../utils/helpers';
 require('dotenv').config()
 
 function Contact() {
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_ID);
+  const [state, handleSubmit] = useForm("myForm");
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
