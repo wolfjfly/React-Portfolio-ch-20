@@ -4,9 +4,8 @@ function Resume() {
   return (
     <div className="columns">
       <div className="column">
-        <p className="content is-medium">Resume</p>
+        <p className="resume">Resume</p>
         <hr />
-
         <a
           className="button is-primary"
           href={process.env.PUBLIC_URL + "/fake-resume.pdf"}
@@ -19,15 +18,19 @@ function Resume() {
         </a>
       </div>
       <div className="column">
-        <p className="content is-medium">Skills</p>
+        <p className="proficiencies">Proficiencies</p>
         <hr />
         <ul>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum dolor</li>
-            <li>Lorem ipsum </li>
-            <li>consectetur</li>
-            <li>consectetur adipiscing elit, sed do</li>
+            <li>JavaScript</li>
+            <li>Node</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>React</li>
+            <li>Studio 5000</li>
+            <li>Fanuc Robotics</li>
+            <li>PTC Creo</li>
+            <li>SolidWorks</li>
+            <li>Industrial Automation Design</li>
         </ul>
       </div>
     </div>

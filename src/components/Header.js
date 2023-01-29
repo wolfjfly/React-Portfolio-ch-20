@@ -41,7 +41,7 @@ function Header() {
         <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
       </div>
       <main>
-        <div>{renderPage(currentPage)}</div>
+        <div className='renderPage'>{renderPage(currentPage)}</div>
       </main>
     </div>
   );

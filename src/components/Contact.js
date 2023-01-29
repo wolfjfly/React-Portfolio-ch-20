@@ -44,37 +44,42 @@ function Contact() {
   };
 
     return (
-      <div>
-        <p>Hello {userName}</p>
-        <form className="form">
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-            placeholder="email"
-          />
-          <input
-            value={userName}
-            name="userName"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="username"
-          />
-          <input
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            type="message"
-            placeholder="message"
-          />
-          <button type="button" onClick={handleFormSubmit}>Submit</button>
-        </form>
+      <div className='contactCardWrap'>
+        <div className='inputCard'>
+          <p className='contact'>Contact {userName}</p>
+          <form className="form">
+            <input
+              value={userName}
+              name="userName"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="Email"
+            />
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              type="message"
+              placeholder="Message"
+            />
+          </form>
+        <button type="button" onClick={handleFormSubmit}>Submit</button>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
+        </div>
+        <div className='contactright'>
+
+        </div>
       </div>
     );
 }

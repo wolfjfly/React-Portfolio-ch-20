@@ -2,13 +2,16 @@ body {
   font-family: Work Sans;
   text-align: center;
   background-color: rgb(143, 228, 234);
+  height: inherit;
 }
 
 .head{
   display: flex;
   width: 100%;
 }
-
+#root{
+  height: inherit;
+}
 .navbar-left{
   display: block;
   width: 25%;
@@ -35,7 +38,10 @@ body {
 
 .head-name:hover, .nav-link:hover,
 .iconFooter:hover, .nameFooter:hover {
-  color: rgb(48,197,255)
+  color: rgb(48,197,255);
+  text-decoration-line:underline;
+  text-decoration-style:wavy;
+  text-decoration-color: rgb(38, 11, 118);
 }
 
 .navbar-right{
@@ -85,30 +91,34 @@ main {
   text-align: left;
 }
 
-footer.footer {
-  background-color: rgb(255, 255, 255);
+.footer {
+  padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
 }
 
 .iconFooter{
   font-size: 1.2em;
   font-weight: bold;
   color: whitesmoke;
-  text-decoration-line:underline;
-  text-decoration-style: double;
-  text-decoration-color: rgb(0, 255, 0);
+  
 }
 
 .nameFooter{
   color: whitesmoke;
   font-size: 1.2em;
 }
+
 .OneFooter{
   font-size: 1.2em;
   font-weight: bold;
 }
+
 .content p:not(:last-child){
   margin: 0em;
 }
+
 .TwoFooter{
   font-size: 1.2em;
   font-weight: bold;
@@ -119,7 +129,11 @@ hr {
   background-color: black;
 }
 
-
+.portfolioHeader{
+  font-size: 2em;
+  font-weight: 900;
+  color: whitesmoke;
+}
 
 @media only screen and (max-width: 1024px) {
     main {
@@ -128,4 +142,45 @@ hr {
       margin-left: 2em;
       margin-right: 2em;
     }
+}
+
+main{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.renderPage{
+  display: block;
+}
+
+.proficiencies{
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+}
+
+.resume{
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contactCardWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.inputCard{
+  width: 50%;
+}
+input{
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
