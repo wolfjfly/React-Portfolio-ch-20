@@ -1,71 +1,82 @@
 import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
 import { validateEmail } from '../utils/helpers';
-require('dotenv').config()
 
 function Contact() {
-  const [state, handleSubmit] = useForm("myForm");
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
+  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
 
-  if (state.succeeded) {
-    return (
-      <div>
-        <p>Your message has been sent</p>
-        <button className="button is-medium is-primary is-half m-6" onClick={()=> window.open("/#contact")}>Back to About</button>
-        {/* This form button is broken. It was supposed to refresh the page so you can submit a new form, but I'm changing this bug into a feature that takes you back to the about section. */}
-      </div>
-    );
-}
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'userName') {
+      setUserName(inputValue);
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`A ${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
+      setMessage(inputValue);
     }
   };
 
-  return (
-    <div>
-      <p className="content is-medium">Contact Me</p>
-      <hr />
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div className="field">
-          <label className="label" htmlFor="name">Name</label>
-          <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="email">Email Address</label>
-          <input className="input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="message">Message</label>
-          <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage('Email or Name is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    alert(`Hello ${userName}`);
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setUserName('');
+    setMessage('');
+    setEmail('');
+  };
+
+    return (
+      <div>
+        <p>Hello {userName}</p>
+        <form className="form">
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="email"
+          />
+          <input
+            value={userName}
+            name="userName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="username"
+          />
+          <input
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="message"
+            placeholder="message"
+          />
+          <button type="button" onClick={handleFormSubmit}>Submit</button>
+        </form>
         {errorMessage && (
           <div>
-            <p className="is-danger">{errorMessage}</p>
+            <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className="button is-medium is-primary is-fullwidth" data-testid="button" type="submit">Submit</button>
-      </form>
-    </div>
-  );
+      </div>
+    );
 }
 
 export default Contact;

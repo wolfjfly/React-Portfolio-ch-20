@@ -1,4 +1,3 @@
-//Needs to include Name and pull in Navigation component
 import React, { useState } from 'react';
 import Navigation from "./Navigation";
 import About from "./About";
@@ -19,7 +18,6 @@ function Header() {
         return <Contact />;
       case "Resume":
         return <Resume />;
-
       default:
         return <About />;
     }
@@ -27,24 +25,21 @@ function Header() {
 
   return (
     <div>
-      <nav className="navbar">
-        <div className="navbar-brand">
-          <a
-            className="navbar-item"
-            rel="noreferrer"
-            target="_blank"
-            href="https://github.com/wolfjfly?tab=repositories"
-          >
-            <span className="content is-large">Benjamin Wolf</span>
-          </a>
-        </div>
-      </nav>
-      {/* Pass the state value and the setter as props to NavTabs */}
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
-      {/* Call the renderPage function passing in the currentPage */}
+      <div className="head has-background-info">
+        <nav className="navbar-left">
+          <div className="navbar-brand">
+            <a
+              className="navbar-item"
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/wolfjfly?tab=repositories"
+            >
+              <span className="head-name">Benjamin Wolf</span>
+            </a>
+          </div>
+        </nav>
+        <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
+      </div>
       <main>
         <div>{renderPage(currentPage)}</div>
       </main>

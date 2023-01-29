@@ -31,9 +31,6 @@ function Project(props) {
                   <br />
                   <br />
                   <div className="content is-family-code">
-                    Languages: {project.languages}
-                    <br />
-                    NPM Packages: {project.packages}
                   </div>
                   <div className="card">
                     <footer className="card-footer">
@@ -43,14 +40,6 @@ function Project(props) {
                         target="_blank" rel="noreferrer"
                       >
                         GitHub repositories
-                      </a>
-                      <br />
-                      <a
-                        href={project.live}
-                        className="card-footer-item"
-                        target="_blank" rel="noreferrer"
-                      >
-                        If Deployed
                       </a>
                     </footer>
                   </div>

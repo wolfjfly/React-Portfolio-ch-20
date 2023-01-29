@@ -1,28 +1,73 @@
 body {
   font-family: Work Sans;
   text-align: center;
-  background-color: aliceblue;
-
+  background-color: rgb(143, 228, 234);
 }
 
-.navbar, .navbar-brand {
-  text-align: center;
-  display: block;
+.head{
+  display: flex;
   width: 100%;
-  background-color: aliceblue;
-  
 }
 
-div.navbar-brand {
+.navbar-left{
+  display: block;
+  width: 25%;
+}
+
+.navbar-brand {
+  text-align: left;
+  display: block;
+  align-content: center;
   padding-top: 2em;
   margin-bottom: 2em;
   
 }
 
-.navbar .navbar-brand > .navbar-item,
-.navbar .navbar-brand .navbar-link {
-  display: inline-block;
+.navbar-brand a.nabar-item {
+  width: auto;
 }
+
+.head-name{
+  font-size: 2em;
+  font-weight: 900;
+  color: whitesmoke;
+}
+
+.head-name:hover, .nav-link:hover,
+.iconFooter:hover, .nameFooter:hover {
+  color: rgb(48,197,255)
+}
+
+.navbar-right{
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-tabs{
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.nav-item{
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-link{
+  color: whitesmoke;
+}
+
 
 main {
   margin-top: 2em;
@@ -44,6 +89,35 @@ footer.footer {
   background-color: rgb(255, 255, 255);
 }
 
+.iconFooter{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration-line:underline;
+  text-decoration-style: double;
+  text-decoration-color: rgb(0, 255, 0);
+}
+
+.nameFooter{
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+.OneFooter{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.content p:not(:last-child){
+  margin: 0em;
+}
+.TwoFooter{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+hr {
+  background-color: black;
+}
 
 
 
