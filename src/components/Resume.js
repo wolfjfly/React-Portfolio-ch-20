@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJs, faNode, faReact  } from '@fortawesome/free-brands-svg-icons';
 
 function Resume() {
   return (
@@ -21,11 +23,11 @@ function Resume() {
         <p className="proficiencies">Proficiencies</p>
         <hr />
         <ul>
-            <li>JavaScript</li>
-            <li>Node</li>
+            <li>JavaScript <FontAwesomeIcon icon={faJs}></FontAwesomeIcon></li>
+            <li>Node <FontAwesomeIcon icon={faNode}></FontAwesomeIcon></li>
             <li>SQL</li>
             <li>MongoDB</li>
-            <li>React</li>
+            <li>React <FontAwesomeIcon icon={faReact}></FontAwesomeIcon></li>
             <li>Studio 5000</li>
             <li>Fanuc Robotics</li>
             <li>PTC Creo</li>

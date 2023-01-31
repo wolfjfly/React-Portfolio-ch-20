@@ -4,6 +4,9 @@ import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Header() {
   const [currentPage, handlePageChange] = useState("About");
@@ -34,7 +37,7 @@ function Header() {
               target="_blank"
               href="https://github.com/wolfjfly?tab=repositories"
             >
-              <span className="head-name">Benjamin Wolf</span>
+              <span className="head-name">Benjamin Wolf <FontAwesomeIcon icon={faSquareGithub}></FontAwesomeIcon></span>
             </a>
           </div>
         </nav>

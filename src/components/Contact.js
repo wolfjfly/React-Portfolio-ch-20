@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeOpen, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 
 function Contact() {
   // Create state variables for the fields in the form
@@ -46,7 +49,7 @@ function Contact() {
     return (
       <div className='contactCardWrap'>
         <div className='inputCard'>
-          <p className='contact'>Contact {userName}</p>
+          <p className='contact'>Contact <FontAwesomeIcon icon={faEnvelopeOpen}></FontAwesomeIcon></p>
           <form className="form">
             <input
               value={userName}
@@ -61,6 +64,7 @@ function Contact() {
               onChange={handleInputChange}
               type="email"
               placeholder="Email"
+              cols={40}
             />
             <textarea
               value={message}
@@ -70,7 +74,7 @@ function Contact() {
               placeholder="Message"
             />
           </form>
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <button type="button" onClick={handleFormSubmit}>Submit <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon></button>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
@@ -78,7 +82,6 @@ function Contact() {
         )}
         </div>
         <div className='contactright'>
-
         </div>
       </div>
     );
