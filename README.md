@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Progressive-web-app-ch-19
+  
+  ## Description
+  Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.  
+  
+  [![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)](https://choosealicense.com/licenses/mit/)
+  
+  
+  ## Table of Contents
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Contributing](#contributing)
+  4. [Credits](#credits)
+  5. [Tests](#tests)
+  6. [License](#license)
+  7. [Questions](#questions)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ## Installation
+  npm i  
+  npm run predeploy  
+  npm run deploy  
 
-## Available Scripts
+  ## Usage
+  <!-- <img width="1207" alt="Demo" src="client/src/GIf/demo.gif">   -->
+  
+  
 
-In the project directory, you can run:
 
-### `npm start`
+  
+  ## Contributing
+  To contribute please follow the link and read the contributing guide. https://github.com/github/docs/blob/dd9f70f9e7edb76e79fc43dee8fb3b8b8dfd1d20/CONTRIBUTING.md
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ## Credits
+  https://bulma.io/  
+  https://reactjs.org/  
+  https://reactjs.org/docs/introducing-jsx.html  
+  https://fontawesome.com/v5/docs/web/use-with/react  
+  https://www.npmjs.com/package/react-router-dom  
+  https://www.npmjs.com/package/react-scripts  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+  ## Tests
+  N/A
+  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ## License
+  Copycenter (c) [wolfjfly](https://github.com/wolfjfly). All centers reserved. 
+  
+Licensed under the [MIT license](https://choosealicense.com/licenses/mit/)
+  
 
-### `npm run build`
+  ## Questions
+  Feel free to contact me with questions or comments @:
+  - GitHub: [wolfjfly](https://github.com/wolfjfly)
+  - Email: [benjamin_wlf@yahoo.com](mailto:benjamin_wlf@yahoo.com)
+  
+  ## Deployed
+    
+  github   
+  https://github.com/wolfjfly/React-Portfolio-ch-20 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  github pages   
+  https://wolfjfly.github.io/React-Portfolio-ch-20/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
